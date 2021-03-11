@@ -60,6 +60,8 @@
 
 ## Projects
 
+[Simple cartoon made with CSS animation](https://tropnikov.github.io/cartoon-html1-coursera/) – One of the projects on [HTML and CSS Basics Course](https://www.coursera.org/learn/snovy-html-i-css/home/welcome) on Coursera
+
 ## Code Examples
 
 ## Languages
