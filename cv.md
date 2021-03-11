@@ -38,7 +38,7 @@
 ### Other
   Predoctoral school _Cold atoms and quantum transport_, École de Physique des Houches, Les Houches, France, Oct 2017.
 
-  ### Courses:
+### Courses:
   * FreeCodeCamp – [profile](https://www.freecodecamp.org/totmaks) (ongoing)
   * Frontend Course in RS School (ongoing)
   * Interfaces Development Specialization on Coursera by Yandex & MIPT (1/5 courses completed – [certificate](http://bit.ly/2OkOh2i))
