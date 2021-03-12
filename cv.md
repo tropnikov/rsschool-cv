@@ -20,7 +20,7 @@
   * Writing grant applications, reports and articles;
   * Public speaking and presentation at different international conferences.
 
-### Achivements:  
+### Achievements:  
   * A digital two-stage system for thermal stabilization based on PID controllers using LabVIEW with an accuracy of 1 mK has been developed and implemented, which is currently used on a daily basis;
   * The frequency stability of the laser system were significantly increased due to the modernization of the laser system (by an order of magnitude, from Δν/ν = E-15 to E-16 at an averaging time of 1000 s) when it was stabilized by the clock transition in cold magnesium atoms.
 
