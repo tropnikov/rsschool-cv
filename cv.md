@@ -82,3 +82,6 @@ function highAndLow(numbers){
 
 ## Languages
 
+  * English — C1+
+  * French — A1+
+  * Russian — native
