@@ -1,0 +1,8 @@
+.job__dates {
+  font-weight: 400;
+  width: fit-content;
+  background: linear-gradient(135deg, #ff26b2 0%, #851bd9 64.06%, #3f0fff 100%);
+  margin: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
