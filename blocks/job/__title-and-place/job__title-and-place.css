@@ -1,0 +1,4 @@
+.job__title-and-place {
+  display: flex;
+  justify-content: flex-start;
+}

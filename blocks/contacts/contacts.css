@@ -1,0 +1,19 @@
+.contacts {
+  display: grid;
+  /* justify-content: space-between; */
+  grid-template-columns: 2fr 1fr;
+  column-gap: 40px;
+  grid-template-areas: "about photo";
+  min-height: 200px;
+  /* align-items: flex-start; */
+}
+
+@media screen and (max-width: 767px) {
+  .contacts {
+    grid-template-areas:
+      "photo"
+      "about";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+}

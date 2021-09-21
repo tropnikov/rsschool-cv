@@ -1,265 +1,45 @@
 @import url(../vendor/normalize.css);
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;700&display=swap");
-@import url(../vendor/fonts/fonts.css);
+@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;700&display=swap);
+/* @import url(../vendor/fonts/fonts.css); */
 @import url(../blocks/page/page.css);
-@import url(../blocks/header/header.css);
+@import url(../blocks/page/__margins/page__margins.css);
+/* @import url(../blocks/header/header.css); */
 @import url(../blocks/footer/__copyright/footer__copyright.css);
 @import url(../blocks/link/link.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__copyright/footer__copyright.css);
+@import url(../blocks/footer/__links/footer__links.css);
+@import url(../blocks/menu/__items/menu__items.css);
+@import url(../blocks/menu/__link/menu__link.css);
+@import url(../blocks/title/title.css);
+@import url(../blocks/page/__subtitle/page__subtitle.css);
+@import url(../blocks/contacts/contacts.css);
+@import url(../blocks/contacts/__main-text/contacts__main-text.css);
+@import url(../blocks/contacts/__photo/contacts__photo.css);
+@import url(../blocks/contacts/__list/contacts__list.css);
+@import url(../blocks/contacts/__item/contacts__item.css);
+@import url(../blocks/contacts-links/contacts-links.css);
+@import url(../blocks/contacts-links/__icons/contacts-links__icons.css);
+@import url(../blocks/section/section.css);
+@import url(../blocks/section/__title/section__title.css);
+@import url(../blocks/two-columns/two-columns.css);
+@import url(../blocks/experience/experience.css);
+@import url(../blocks/job/__dates/job__dates.css);
+@import url(../blocks/job/__title-and-place/job__title-and-place.css);
+@import url(../blocks/job/__title/job__title.css);
+@import url(../blocks/job/__place/job__place.css);
+@import url(../blocks/job/__description-list/job__description-list.css);
+@import url(../blocks/education/education.css);
+@import url(../blocks/education/__list/education__list.css);
 
-.page {
-}
-.header {
-}
-.page__header {
-}
-.menu {
-}
-.menu__items {
-}
-.menu__link {
-  color: black;
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-}
+@import url(../blocks/code/code.css);
+@import url(../blocks/code/__content/code__content.css);
+@import url(../blocks/projects/projects.css);
+@import url(../blocks/projects/__list/projects__list.css);
+@import url(../blocks/skills/skills.css);
+@import url(../blocks/skills/__list/skills__list.css);
+@import url(../blocks/education-item/__dates/education-item__dates.css);
+@import url(../blocks/education-item/__description/education-item__description.css);
 
-@media screen and (max-width: 767px) {
-  .menu__link {
-    font-size: 18px;
-    line-height: 20px;
-  }
-}
-.menu__items {
-  margin-top: 28px;
-  display: flex;
-  justify-content: space-between;
-  /* align-items: flex-end; */
-  /* box-sizing: border-box; */
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 2px;
-}
-
-@media screen and (max-width: 767px) {
-  .menu__items {
-    margin-top: 16px;
-  }
-}
-.content {
-}
-.page__content {
-}
-.title {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 44px;
-  line-height: 57px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  /* Black */
-
-  color: #222222;
-}
-.page__title {
-}
-
-.page__subtitle {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 36px;
-  margin: 0;
-}
-.contacts {
-  display: flex;
-  justify-content: space-between;
-  min-height: 200px;
-  align-items: flex-start;
-}
-.section {
-  padding: 10px 0;
-}
-.contacts__photo {
-  width: 250px;
-  height: 250px;
-
-  background: url("../images/Photo.JPG");
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  border-radius: 50%;
-  background-position: center;
-  background-size: cover;
-}
-.contacts__main-text {
-  max-width: 70%;
-}
-
-.two-columns {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  /* grid-template-rows: repeat(2, auto); */
-  /* row-gap: 48px; */
-  column-gap: 40px;
-  /* grid-template-columns: repeat(2, auto); */
-  /* grid-template-columns: repeat(2, 1fr); */
-
-  grid-template-areas:
-    "work skills"
-    "work projects"
-    "school code"
-    "school languages";
-}
-@media screen and (max-width: 767px) {
-  .two-columns {
-    grid-template-columns: 1fr;
-    /* grid-template-rows: repeat(4, auto); */
-    grid-template-areas:
-      "work"
-      "school"
-      "skill"
-      "projects"
-      "code"
-      "languages";
-    row-gap: 32px;
-  }
-}
-.section__title {
-}
-.contacts__title {
-}
-.contacts__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: end;
-  row-gap: 8px;
-}
-.contacts__item {
-  align-self: end;
-
-  /* text-align: ; */
-}
-.contacts-links {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  /* identical to box height */
-  display: flex;
-  align-items: flex-end;
-  text-align: right;
-  text-decoration-line: underline;
-
-  /* Black */
-
-  color: #222222;
-
-  /* Inside Auto Layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 0px 2px;
-}
-.contacts-links__icons {
-  width: 18px;
-  height: 18px;
-  margin: 0 6px;
-}
-
-.experience {
-  grid-area: work;
-}
-.about {
-}
-.about__title {
-}
-.about__text {
-}
-.experience {
-}
-.experience__title {
-}
-.experience__item {
-}
-.job {
-}
-.job__dates {
-}
-.job__main-text {
-}
-.job__title {
-}
-.job__description-title {
-}
-.job__description-list {
-}
-.education {
-  grid-area: school;
-}
-.education__title {
-}
-.education__list {
-}
-.education__item {
-}
-.education-item {
-}
-.education-item__dates {
-}
-.education-item__description {
-}
-.education__subtitle {
-}
-.skills {
-  grid-area: skills;
-}
-.skills__title {
-}
-.skills__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 4px;
-  /* justify-content: space-between; */
-  list-style-type: none;
-  margin: 0;
-}
-.skills__item {
-}
-.projects {
-  grid-area: projects;
-}
-.projects__title {
-}
-.projects__list {
-}
-.projects__item {
-}
-.code {
-  grid-area: code;
-}
-.code__title {
-}
-.languages {
-  grid-area: languages;
-}
-.languages__title {
-}
-.languages__list {
-}
-.languages__item {
-}
-.footer {
-}
-.page__footer {
-}
-.footer__copyright {
-}
-.footer__logo {
-}
+@import url(../blocks/languages/languages.css);
+@import url(../blocks/footer/__logo/footer__logo.css);

@@ -7,17 +7,24 @@
     <link rel="stylesheet" href="./pages/index.css" />
     <link
       rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/a11y-dark.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/monokai.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <script
-      defer
-      src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"
+      integrity="sha512-MinqHeqca99q5bWxFNQEQpplMBFiUNrEwuuDj2rCSh1DgeeTXUgvgYIHZ1puBS9IKBkdfLMSk/ZWVDasa3Y/2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
+    <script>
+      hljs.highlightAll();
+    </script>
 
     <title>Maksim Tropnikov CV</title>
   </head>
   <body>
-    <div class="page">
+    <div class="page page__margins">
       <!-- <header class="header page__header">
         <nav class="menu">
           <ul class="menu__items">
@@ -92,7 +99,10 @@
             <!-- <h2 class="section__title contacts__title">Contacts</h2> -->
             <ul class="contacts__list">
               <li class="contacts__item">
-                <a class="contacts-links" href="https://t.me/tropnikov"
+                <a
+                  class="contacts-links"
+                  href="https://t.me/tropnikov"
+                  target="_blank"
                   ><img
                     class="contacts-links__icons"
                     src="./images/tg.svg"
@@ -101,7 +111,10 @@
                 >
               </li>
               <li class="contacts__item">
-                <a class="contacts-links" href="mailto:makstropnikov@gmail.com"
+                <a
+                  class="contacts-links"
+                  href="mailto:makstropnikov@gmail.com"
+                  target="_blank"
                   ><img
                     class="contacts-links__icons"
                     src="./images/mail.svg"
@@ -114,6 +127,7 @@
                 <a
                   class="contacts-links"
                   href="https://www.linkedin.com/in/maksim-tropnikov"
+                  target="_blank"
                   ><img
                     class="contacts-links__icons"
                     src="./images/li.svg"
@@ -122,7 +136,10 @@
                 >
               </li>
               <li class="contacts__item">
-                <a class="contacts-links" href="https://github.com/tropnikov"
+                <a
+                  class="contacts-links"
+                  href="https://github.com/tropnikov"
+                  target="_blank"
                   ><img
                     class="contacts-links__icons"
                     src="./images/github.svg"
@@ -175,14 +192,17 @@
           <section class="experience section" id="experience">
             <h2 class="section__title experience__title">Experience</h2>
             <div class="experience__item job">
-              <h3 class="job__dates">2013 – present</h3>
+              <h3 class="job__dates">2013 – Currently</h3>
 
               <div class="job__main-text">
-                <p class="job__title">
-                  Junior Researcher at Laboratory of Quantum Sensors, Institute
-                  of Laser Physics SB RAS.
+                <p class="job__title-and-place">
+                  <span class="job__title">Junior Researcher</span>
+                  <span class="job__place"
+                    >Laboratory of Quantum Sensors, Institute of Laser Physics
+                    SB RAS</span
+                  >
                 </p>
-                <h4 class="job__description-title">Responsibilities:</h4>
+                <!-- <h4 class="job__description-title">Responsibilities:</h4> -->
                 <ul class="job__description-list">
                   <li>
                     Experimental research on the development of an optical
@@ -273,13 +293,17 @@
           <section class="section projects" id="projects">
             <h2 class="section__title projects__title">Projects</h2>
             <ul class="projects__list">
-              <li class="projects__item">
-                <a href="https://github.com/tropnikov/virtual-piano"
+              <li class="projects__item link">
+                <a
+                  class="link"
+                  href="https://github.com/tropnikov/virtual-piano"
                   >Virtual Piano</a
                 >
               </li>
               <li class="projects__item">
-                <a href="https://github.com/tropnikov/to-do-list">To-Do List</a>
+                <a class="link" href="https://github.com/tropnikov/to-do-list"
+                  >To-Do List</a
+                >
               </li>
             </ul>
           </section>
@@ -288,9 +312,9 @@
             <h2 class="code__title section__title">Code Examples</h2>
             <!-- _(for now more just to show code usage in md)_ -->
 
-            <pre><code class="language-js">
-
-function highAndLow(numbers) {
+            <pre
+              class="code__content"
+            ><code class="language-js">function highAndLow(numbers) {
   let numbersArray = numbers.split(' ').map(x=>+x);
   let max = numbersArray.reduce(function(a, b) {
     return Math.max(a, b);
@@ -299,9 +323,7 @@ function highAndLow(numbers) {
     return Math.min(a, b);
   });
   return max.toString() + ' ' + min.toString();
-}
-            </code>
-          </pre>
+}</code></pre>
           </section>
 
           <section class="section languages" id="languages">
@@ -319,16 +341,17 @@ function highAndLow(numbers) {
       <footer class="footer section page__footer">
         <p class="footer__copyright">
           &copy;
-          <a href="https://github.com/tropnikov" target="_blank"
+          <a class="link" href="https://github.com/tropnikov" target="_blank"
             >Maksim Tropnikov</a
           >
           2021
         </p>
-        <img
-          src="./images/rs_school_js.svg"
-          alt="RSS Frontend course logo"
-          class="footer__logo"
-        />
+        <a href="https://rs.school/js/">
+          <img
+            src="./images/rs_school_js.svg"
+            alt="RSS Frontend course logo"
+            class="footer__logo link"
+        /></a>
       </footer>
     </div>
     <script>

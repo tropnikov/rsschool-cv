@@ -1,0 +1,17 @@
+.menu__items {
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-end; */
+  /* box-sizing: border-box; */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2px;
+}
+
+@media screen and (max-width: 767px) {
+  .menu__items {
+    margin-top: 16px;
+  }
+}
