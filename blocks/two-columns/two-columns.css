@@ -1,0 +1,25 @@
+.two-columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 40px;
+  grid-template-areas:
+    "work skills"
+    "work projects"
+    "school code"
+    "school languages";
+}
+@media screen and (max-width: 767px) {
+  .two-columns {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "work"
+      "school"
+      "skills"
+      "projects"
+      "code"
+      "languages";
+    row-gap: 32px;
+  }
+}
